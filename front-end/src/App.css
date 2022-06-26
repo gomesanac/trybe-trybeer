@@ -1,0 +1,318 @@
+/* Toggle Styles */
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#cartButton {
+  z-index: 50;
+}
+
+#cartButton.cart-toggled {
+  margin-left: 250px !important;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #d17a22;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: 250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  #wrapper {
+    padding-left: 0;
+  }
+
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+
+  #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+/* Products Page */
+
+.product-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.product-card {
+  margin: 20px;
+  width: 18rem;
+}
+
+.img-card {
+  max-height: 12rem;
+}
+
+.product-qtd {
+  margin: 0 10px;
+}
+
+.cart-content {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cart-button {
+  width: 25rem;
+  margin: 20px 0;
+  color: white;
+  border-color: #8a3033;
+  background-color: #8a3033;
+}
+
+.cart-button:hover {
+  color: white;
+}
+
+/* Checkout Page */
+
+.address-content {
+  margin: 4rem 0;
+}
+
+.checkout-item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.checkout-text {
+  margin: 20px;
+}
+
+.checkout-title {
+  margin: 20px 0;
+}
+
+#checkoutFinalizeButton {
+  z-index: 50 !important;
+}
+
+.checkoutOrdersList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.price {
+  margin: 20px 0 0;
+}
+
+/* Client Profile Page */
+
+.message {
+  margin-top: 1rem;
+}
+
+/* Admin Profile Page */
+
+.admin-profile {
+  display: flex;
+}
+
+.admin-sidebar {
+  background-color: #343a40 !important;
+  color: #212529;
+  min-height: 100vh;
+  padding: 2vh;
+}
+
+.admin-sidebar a {
+  color: #999999;
+}
+
+.admin-sidebar a:hover {
+  color: #666666;
+}
+
+/* Orders List */
+
+.orders-list {
+  align-content: start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-custom {
+  color: white;
+  border-color: #8a3033;
+  background-color: #8a3033;
+}
+
+.btn-custom:hover {
+  color: white;
+}
+
+/* Order Details Page */
+
+.order-details-page {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.admin-order-details-page {
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.delivery-button {
+  width: 25rem;
+  margin: 20px 0;
+  color: white;
+  border-color: #8a3033;
+  background-color: #8a3033;
+  margin: 1rem auto;
+}
+
+.delivery-button {
+  color: white;
+}
+
+/* All Pages */
+
+.main-page {
+  margin: 6vh 12vh 0;
+  padding: 2vh;
+  justify-content: center;
+}
+
+.message-geral {
+  margin-top: 4rem;
+}
+
+.message-order {
+  margin-top: 6rem;
+}
+
+/* Side Menu Top*/
+
+.side-menutop {
+  height: 100vh;
+}
+
+/* Forms */
+
+.form-button {
+  margin: 20px 0;
+  color: white;
+  border-color: #8a3033;
+  background-color: #8a3033;
+}
+
+.form-button:hover {
+  color: white;
+}
